@@ -1,6 +1,7 @@
 package eylül28;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class binaryDegeri {
 
     }
 
-    public static Integer [] binary(int desimal) {
+    public static List<Integer> binary(int desimal) {
 
         List<Integer> binaryList = new ArrayList<>();
 
@@ -35,15 +36,16 @@ public class binaryDegeri {
           }
           while (sayi >=1);
 
-        Integer arr[] = binaryList.toArray(new Integer[0]);
-        System.out.print("Girilen desimal değerin binaryi karşılığı : ");
-        for (int i = binaryList.size()-1 ; i >=0 ; i--) {
+        Collections.reverse(binaryList);
+     // Integer arr[] = binaryList.toArray(new Integer[0]);
+     // System.out.print("Girilen desimal değerin binaryi karşılığı : ");
+     // for (int i = binaryList.size()-1 ; i >=0 ; i--) {
 
-            System.out.print(" "+ arr[i]) ;
-        }
+     //     System.out.print(" "+ arr[i]) ;
 
 
-return  arr;
+
+return  binaryList;
 
     }
 }
