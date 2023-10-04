@@ -35,7 +35,7 @@ public class fibonacci {
                 fibonacci.add(fibonacci.get(i-1) + fibonacci.get(i-2)) ;
             }
         }
-        System.out.println(fibonacci);
+
 
         System.out.println("ilk " + sayi + " sayının Fibonacci dizisi " + fibonacci);
        // Integer arr[] = fibonacci.toArray(new Integer[0]);
