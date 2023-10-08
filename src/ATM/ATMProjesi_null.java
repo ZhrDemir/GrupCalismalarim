@@ -1,6 +1,6 @@
 package ATM;
 
-public class ATMProjesi {
+public class ATMProjesi_null {
     public static void main(String[] args) {
    /*
     ATM
