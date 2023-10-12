@@ -1,4 +1,4 @@
-package ekim6;
+package EfehanSorulari;
 
 import java.util.Random;
 
