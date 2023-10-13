@@ -49,7 +49,7 @@ Basit bir 5 ürünlü manav alisveris programi yaziniz.
         System.out.println("Listeden başka bir ürün seçmek ister misiniz? (Evet = E , Hayır = H)");
         char tekrarSecim=scanner.next().toUpperCase().charAt(0);
 
-        if (tekrarSecim == 'E' ) {
+        if (tekrarSecim== 'E' ) {
                 b = true;
 
             }else if(tekrarSecim=='H'){

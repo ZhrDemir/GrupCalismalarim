@@ -18,20 +18,25 @@ public class kahveSorusu {
         boolean b = true;
         do {
 
+            System.out.println("**************** WİSE KAHVECİ **************** ");
+            System.out.println("=========== HOŞGELDİNİZ ===========");
             Scanner scanner = new Scanner(System.in);
             System.out.println("Hangi Kahveyi İstersiniz? \n 1.Türk Kahvesi \n 2.Filtre Kahvesi \n 3.Americano");
-            int kahve = scanner.nextInt();
+            String kahve = scanner.nextLine();
 
 
-            if (kahve == 1) {
+            if (kahve.equals("1")) {
                 kahve1 = "Türk Kahvesi  ";
                 b = true;
-            } else if (kahve == 2) {
+            } else if (kahve.equals("2")){
                 kahve1 = "Filitre Kahvesi ";
                 b = true;
-            } else if (kahve == 3) {
+            } else if (kahve.equals("3")) {
                 kahve1 = "Americano  ";
-            } else b = false;
+            } else {
+                System.out.println("Yanlış giriş yaptınız.");
+                b = false;
+            }
         }while (!b);
 return kahve1;
     }
