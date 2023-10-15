@@ -35,9 +35,9 @@ public class KAHVECİ2 {
                 System.out.println("=========== Hoşgeldiniz ===========");
 
                 System.out.println("Hangi Kahveyi İstersiniz? \n 1.Türk Kahvesi \n 2.Filtre Kahvesi \n 3.Americano");
-
+                 b = true;
                 kahve = "";
-                kahve = scanner.nextLine();
+                kahve = scanner.next();
 
 
                 if (!(kahve.equals("1") || kahve.equals("2") || kahve.equals("3"))){
@@ -110,6 +110,8 @@ b=true;
                    break;
 
                 } else if (seker.equalsIgnoreCase("hayır")) {
+                    System.out.println("Şeker eklenmiyor...");
+                    seker1= " şekersiz";
                    break;
 
                 } else b = false;
