@@ -20,7 +20,8 @@ ilk programa girildiginde bizi bir menu karsilasin bu secenekler
     */
 
     static Scanner scanner = new Scanner(System.in);
-    static int secim=0;
+    static int secim=0 ;  static int urunKodu = 0; static int urunFiyatı = 0;
+    static String urun = "";
     public static void menu() {
 
         System.out.println("====================WISE T127 MARKET========================");
