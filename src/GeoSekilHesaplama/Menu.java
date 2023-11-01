@@ -63,6 +63,12 @@ public class Menu {
     }
 
     private static void cember() {
+        System.out.println("Çemberin yarıçapını giriniz.");
+        double yaricap = scanner.nextDouble();
+        Cember obj1 = new Cember(yaricap);
+        System.out.println(obj1);
+        menu();
+
     }
 
 }
